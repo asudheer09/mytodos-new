@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class MytodosTO {
-    private int id;
+    private Long id;
     private String taskName;
     private String status;
 

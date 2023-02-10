@@ -15,6 +15,10 @@
                </div>
                <div class="panel-body">
                   <form:form method="POST" action="/add" modelAttribute="mytodos">
+                  <div class="form-group">
+                        <form:label path="id">Task Name</form:label>
+                        <form:input path="id" />
+                  </div>
                      <div class="form-group">
                         <form:label path="taskName">Task Name</form:label>
                         <form:input path="taskName" />

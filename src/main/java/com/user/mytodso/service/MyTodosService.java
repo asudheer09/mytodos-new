@@ -24,4 +24,8 @@ public class MyTodosService {
     public void deleteById(Long id){
         repository.deleteById(id);
     }
+
+    public Mytodos findById(Long id){
+        return repository.findById(id).orElseThrow(()->new RuntimeException("record not found"));
+    }
 }

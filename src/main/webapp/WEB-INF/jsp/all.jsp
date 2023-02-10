@@ -16,11 +16,14 @@
 	</style>
 </head>
 <body>
-	<h1 align="center" style="color:#337ab7">WELCOME TO MY TODO'S &nbsp; APPLICTION</h1>
+<div class="container">
+	<h1 align="center" style="color:#337ab7">WELCOME TO MY TODO'S &nbsp; APPLICATION</h1>
 	<hr>
+	<div align="center">
 	<button class="btn btn-primary mb-2" id="mybutton">
-		<a href="/mytodos/mytodos" style="color:white">ADD TODO'S</a>
+		<a href="/mytodos" style="color:white">ADD TODO'S</a>
 	</button>
+	</div>
 	<hr>
 	<c:if test="${not empty todosList}">
 		<table class="table table-striped">
@@ -42,6 +45,7 @@
 			</c:forEach>
 		</table>
 	</c:if>
+	</div>
 </body>
 <script src="/webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="/webjars/jquery/1.9.1/jquery.min.js"></script>
